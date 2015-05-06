@@ -176,12 +176,12 @@ function hitDetectionCoin (){
 
 
 
-$('#start').click(function gl() {
-   window.setTimeout(gl,20);
-  draw();
-  hero();
-  enemy1();
-  coin();
+// $('#start').click(function gl() {
+//    window.setTimeout(gl,20);
+//   draw();
+//   hero();
+//   enemy1();
+//   coin();
   march(); 
   hitDetection();
   hitDetection2();
