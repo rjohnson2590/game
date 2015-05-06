@@ -140,8 +140,8 @@ function onKeyUp(evt) {
   if (evt.keyCode == 39) rightKey = false;
   else if (evt.keyCode == 37) leftKey = false;
   if (evt.keyCode == 38) upKey = false;
-  else if (evt.keyCode == 40) downKey = false;
-}
+//   else if (evt.keyCode == 40) downKey = false;
+// }
 
 $(document).keydown(onKeyDown);
 $(document).keyup(onKeyUp);
