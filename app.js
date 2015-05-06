@@ -169,10 +169,10 @@ function hitDetectionCoin (){
   if (xc+rc >= x && xc-rc <= x+k && yc+rc >= y && yc-rc <= y+f ){
           xc = ((Math.random()*(w-10)));
           yc = ((Math.random()*(h-10)));
-          points += 5;
-          $('#point').val(points);
-                    } 
-  }
+  //         points += 5;
+  //         $('#point').val(points);
+  //                   } 
+  // }
 
 
 
