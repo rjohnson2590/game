@@ -8,13 +8,13 @@ var y= 450;
 var x = 50; 
 var w = $('#myDrawing').width();
 var h = $('#myDrawing').height();
-// var xc = ((Math.random()*(w-10)));
-// var yc = ((Math.random()*(h-10)));
-// var x_1 = ((Math.random()*(w-15)));
-// var y_1 = ((Math.random()*(h-15)));
-// var x_2 = ((Math.random()*(w-15)));
-// var y_2 = ((Math.random()*(h-15)));
-// var angle = 45;
+var xc = ((Math.random()*(w-10)));
+var yc = ((Math.random()*(h-10)));
+var x_1 = ((Math.random()*(w-15)));
+var y_1 = ((Math.random()*(h-15)));
+var x_2 = ((Math.random()*(w-15)));
+var y_2 = ((Math.random()*(h-15)));
+var angle = 45;
 var angle1 = 35;
 var radians = angle * Math.PI/ 180;
 var radians1 = angle1 * Math.PI/180;
@@ -140,8 +140,8 @@ function onKeyUp(evt) {
   if (evt.keyCode == 39) rightKey = false;
   else if (evt.keyCode == 37) leftKey = false;
   if (evt.keyCode == 38) upKey = false;
-//   else if (evt.keyCode == 40) downKey = false;
-// }
+  else if (evt.keyCode == 40) downKey = false;
+}
 
 $(document).keydown(onKeyDown);
 $(document).keyup(onKeyUp);
@@ -169,19 +169,19 @@ function hitDetectionCoin (){
   if (xc+rc >= x && xc-rc <= x+k && yc+rc >= y && yc-rc <= y+f ){
           xc = ((Math.random()*(w-10)));
           yc = ((Math.random()*(h-10)));
-  //         points += 5;
-  //         $('#point').val(points);
-  //                   } 
-  // }
+          points += 5;
+          $('#point').val(points);
+                    } 
+  }
 
 
 
-// $('#start').click(function gl() {
-//    window.setTimeout(gl,20);
-//   draw();
-//   hero();
-//   enemy1();
-//   coin();
+$('#start').click(function gl() {
+   window.setTimeout(gl,20);
+  draw();
+  hero();
+  enemy1();
+  coin();
   march(); 
   hitDetection();
   hitDetection2();
